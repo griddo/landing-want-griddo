@@ -380,7 +380,7 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #4981f2;
+  background: linear-gradient(135deg, #5057FF, #3CC3DD);
   text-transform: uppercase;
   color: #FAF9F6;
   letter-spacing: 0.25px;
@@ -398,7 +398,7 @@ a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background: linear-gradient(135deg, #5057FF, #3CC3DD);
   text-transform: uppercase;
   color: #FAF9F6;
   letter-spacing: 0.25px;
@@ -409,7 +409,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #ff589e;
+  background: linear-gradient(15deg, #5057FF, #3CC3DD);
 }
 
 button.main-button {
@@ -419,7 +419,7 @@ button.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background: linear-gradient(15deg, #5057FF, #3CC3DD);
   text-transform: uppercase;
   color: #FAF9F6;
   letter-spacing: 0.25px;
@@ -430,7 +430,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #5057FF;
+  background: linear-gradient(135deg, #3CC3DD,#5057FF);
 }
 
 
@@ -1387,7 +1387,7 @@ footer .social li {
 }
 
 footer .social li a {
-  color: #9d5bd9;
+  color: linear-gradient(135deg, #3CC3DD,#5057FF);
    text-align: center;
   background-color: #FAF9F6;
   width: 36px;
@@ -1403,7 +1403,7 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #ff589e;
+  background: linear-gradient(135deg, #3CC3DD,#5057FF);
   color: #FAF9F6;
 }
 
