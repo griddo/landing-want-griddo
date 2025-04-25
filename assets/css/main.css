@@ -1021,11 +1021,6 @@ parallax & home seperator
   border-radius: 20px;
 }
 
-.mini .mini-content .mini-box i {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
 
 .mini .mini-content .mini-box span {
   display: block;
@@ -1045,7 +1040,16 @@ parallax & home seperator
   margin-top: 20px;
 }
 
+.mini .mini-content .mini-box .mini-number span {
+  font-size:48px;
+  font-weight: 600;
+  background: linear-gradient(270deg, #3CC3DD 0%, #5057FF 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 
+}
 /* 
 ---------------------------------------------
 uni logos
@@ -1439,7 +1443,7 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(135deg, #001B2C 0%, #8261ee 100%);
+  background-image: linear-gradient(135deg, #001B2C 0%, #6CA0F2 100%);
   left: 0;
   right: 0;
   top: 0;
