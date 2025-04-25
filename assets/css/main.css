@@ -1274,6 +1274,7 @@ team
   overflow: hidden;
 }
 
+
 .team-item .team-content .team-info {
   float: left;
   margin-left: 20px;
@@ -1313,6 +1314,15 @@ team
   line-height: 26px;
 }
 
+.team-item .team-content strong {
+  background: linear-gradient(270deg, #3CC3DD 0%, #5057FF 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+
+}
 /* 
 
 
