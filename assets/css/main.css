@@ -1168,7 +1168,7 @@ counter
   transition: all 0.3s ease 0s;
   float: left;
   margin-left: 90%;
-  margin-top: -140%;
+  margin-top: -340px;
 }
 .counter-frame .pill-image {
   /* background: #00ffff; */
