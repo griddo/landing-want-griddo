@@ -90,7 +90,7 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: "Figtree", sans-serif;
   font-weight: 400;
-  background-color: #FAF9F6;
+  background-color: #F9FAF6;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -119,7 +119,7 @@ global styles
 */
 html,
 body {
-  background: #FAF9F6;
+  /* background: #FAF9F6; */
   font-family: "Figtree", sans-serif;
 }
 
@@ -145,7 +145,7 @@ body {
 
 .section.colored span{
   font-family: 'Shadows Into Light';
-  color: #FAF9F6;
+  color: #F9FAF6;
 }
 
 
