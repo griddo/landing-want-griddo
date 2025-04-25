@@ -206,7 +206,7 @@ body {
 
 .center-heading .section-title strong{
   font-family: 'Shadows Into Light';
-  background: linear-gradient(to right, #5057FF, #3CC3DD);
+  background: linear-gradient(135deg, #5057FF, #3CC3DD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -218,10 +218,10 @@ body {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-  color: #777;
+  color: #F9FAF6;
   line-height: 28px;
   letter-spacing: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .center-text.colored {
@@ -230,9 +230,18 @@ body {
 
 .center-text p {
   font-size: 15px;
-  color: #001B3C;
+  color: #F9FAF6;
   margin-bottom: 30px;
 }
+
+.center-text p strong {
+    font-family: 'Shadows Into Light';
+    background: linear-gradient(135deg, #5057FF, #3CC3DD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
 
 .left-text {
   font-weight: 400;
@@ -1259,7 +1268,7 @@ team
   display: block;
   font-weight: 400;
   font-size: 17px;
-  color: #42D6E9;
+  color: #6CA0F2;
   letter-spacing: 0.25px;
   margin-bottom: 5px;
 }
