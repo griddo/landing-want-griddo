@@ -1093,8 +1093,9 @@ counter
   position: relative;
   z-index: 3;
   width: 100%;
-  margin-top: 120px;
-  padding-top: 340px;
+  /* margin-top: 120px; */
+  padding-top: 160px;
+  padding-bottom: 40px;
 }
 
 .counter .content .count-item {
@@ -1146,11 +1147,10 @@ counter
   padding-top: 80px;
   padding-bottom: 0px;
 
-  z-index: 4;
 }
 
 .counter-frame .user-image {
-  background: #ff00ff;
+  /* background: #ff00ff; */
   width: 221px;
   height: 400px;
   overflow: hidden;
@@ -1163,9 +1163,25 @@ counter
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   float: left;
-  margin-left:300px;
-  margin-top:-480px;
-  z-index: 10;
+  margin-left: 90%;
+  margin-top: -140%;
+}
+.counter-frame .pill-image {
+  /* background: #00ffff; */
+  width: 160px;
+  height: 48px;
+  /* overflow: hidden; */
+  /* position: relative; */
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  float: left;
+  margin-left:0px;
+  margin-top:-58px;
 }
 
 @media (max-width: 991px) {
