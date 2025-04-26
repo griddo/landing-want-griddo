@@ -1044,10 +1044,13 @@ parallax & home seperator
 
 .mini .mini-content .mini-box {
   display: block;
-  background: #FAF9F6;
+  background-image: radial-gradient(circle at 102% 100%, #C4EBFF 0%, #FAF9F6 30%);
   padding: 20px;
+  border-width: 1px;
   border-radius: 20px;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  border-color: rgba(255,255,255,0.9);
+  border-style: solid;
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.08); 
   margin-bottom: 30px;
   position: relative;
   -webkit-transition: all 0.3s ease 0s;
@@ -1055,13 +1058,15 @@ parallax & home seperator
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   text-align: center;
+  
 }
 
 .mini .mini-content .mini-box:hover {
   margin-top: -10px;
+  cursor: default!important;
 }
 
-.mini .mini-content .mini-box:before {
+/* .mini .mini-content .mini-box:before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -1074,7 +1079,7 @@ parallax & home seperator
   right: -20px;
   margin: auto;
   border-radius: 20px;
-}
+} */
 
 
 .mini .mini-content .mini-box span {
