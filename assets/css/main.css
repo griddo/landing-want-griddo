@@ -174,9 +174,27 @@ body {
   position: relative;
 }
 
-.left-heading .section-title strong {
+.left-heading .section-title.comms strong {
   font-family: 'Shadows Into Light';
   background: linear-gradient(to right, #C67FC6, #8196E0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.left-heading .section-title.marketing strong {
+  font-family: 'Shadows Into Light';
+  background: linear-gradient(15deg, #D68A9A, #D86B3E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.left-heading .section-title.tech strong {
+  font-family: 'Shadows Into Light';
+  background: linear-gradient(15deg, #001B3C, #33909D);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1044,11 +1062,11 @@ parallax & home seperator
 
 .mini .mini-content .mini-box {
   display: block;
-  background-image: radial-gradient(circle at 102% 100%, #C4EBFF 0%, #FAF9F6 30%);
+  background-image: radial-gradient(circle at 122% 110%, #6D9EF2 0%, #022958 30%);
   padding: 20px;
   border-width: 1px;
   border-radius: 20px;
-  border-color: rgba(255,255,255,0.9);
+  border-color: rgba(255,255,255,0.1);
   border-style: solid;
   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.08); 
   margin-bottom: 30px;
@@ -1086,7 +1104,7 @@ parallax & home seperator
   display: block;
   font-weight: 400;
   font-size: 14px;
-  color: rgba(0,27,60,0.7);
+  color: rgba(255,255,255,0.7);
   letter-spacing: .75px;
 }
 
@@ -1094,7 +1112,7 @@ parallax & home seperator
   display: block;
   font-weight: 400;
   font-size: 17px;
-  color: rgba(0,27,60,0.9);
+  color: rgba(255,255,255,0.9);
   letter-spacing: 0.25px;
   margin-bottom: 5px;
   margin-top: 20px;
@@ -1103,7 +1121,7 @@ parallax & home seperator
 .mini .mini-content .mini-box .mini-number span {
   font-size:48px;
   font-weight: 600;
-  background: linear-gradient(270deg, #3CC3DD 0%, #5057FF 90%);
+  background: linear-gradient(270deg, #3CC3DD 10%, #5057FF 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
