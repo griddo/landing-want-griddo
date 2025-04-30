@@ -1392,7 +1392,7 @@ team
   line-height: 26px;
 }
 
-.team-item .team-content strong {
+.team-item .team-content span {
   background: linear-gradient(270deg, #3CC3DD 0%, #5057FF 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
