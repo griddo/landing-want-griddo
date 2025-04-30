@@ -1,0 +1,193 @@
+:root {
+  --background-base: #F9FAF6;
+  --degradado: none; /* Valor inicial por defecto */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&family=Shadows+Into+Light&display=swap');
+
+@font-face {
+font-family: 'Logical';
+src: url('assets/fonts/Logical.otf') format('opentype');
+font-weight: 100 900; /* range admited by the font */
+font-style: normal;
+}
+
+/* Fondo general del body */
+body {
+  background: var(--background-base);
+  color: #001b3c;
+  transition: background 0.5s ease, color 0.5s ease;
+  font-family: 'Figtree', sans-serif;
+  margin: 0;
+}
+
+.title {
+  font-family: 'Logical', serif;
+
+}
+
+.is-huge {
+  font-size: 3rem;
+  padding-top: 48px;
+  padding-bottom: 52px;
+}
+
+.is-xl{
+    font-size: 2.75rem;
+    padding-top: 0.3em;
+    padding-bottom: 0.6em;
+}
+.is-l{
+  font-family: 'Logical';
+  font-size: 2.25rem;
+  padding-top: 48px;
+  padding-bottom: 52px;
+}
+.is-m{
+  font-family: 'Logical';
+  font-size: 1.75rem;
+}
+.ise-s{
+  font-family: 'Logical';
+  font-size: 1.5rem;
+}
+.is-xs{
+  font-family: 'Logical';
+  font-size: 1.5rem;
+}
+
+.section-title {
+  font-family: 'Shadows Into Light';
+  text-transform:uppercase;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+.section-subtitle {
+  font-size: 1.3rem;
+}
+/*ESTILOS DE TEXTO */
+em {
+  font-style: normal;
+}
+
+.highlight {
+  font-family: 'Shadows Into Light';
+  text-transform:uppercase;
+  font-size: 1rem
+}
+
+/* === Cajas === */
+.bg-box {
+  background: var(--degradado, #00ffff); /* Usa degradado si existe, sino fallback */
+  margin: 32px auto;
+  padding: 40px;
+  border-radius: 24px;
+  min-height: 120px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: #001b3c;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.5s ease;
+}
+
+/* === Variantes de degradado (modifican solo la variable) === */
+.is-comms {
+  --degradado: linear-gradient(90deg, #E9B3E9 0%, #B3CDF8 100%);
+}
+
+.is-tech {
+  --degradado: linear-gradient(90deg, #5057FF 0%, #3CC3DD 100%);
+}
+
+.is-mkt {
+  --degradado: linear-gradient(90deg, #FDD272 0%, #E9B4EA 100%);
+}
+
+.is-brand {
+  --degradado: linear-gradient(90deg, #FDD272 0%, #E9B4EA 100%);
+}
+
+/* === Recortes de bordes === */
+.is-cut-bottom {
+  border-radius: 24px 24px 0 0;
+}
+
+.is-cut-top {
+  border-radius: 0 0 24px 24px;
+}
+
+.is-cut-left {
+  border-radius: 0 24px 24px 0;
+}
+
+.is-cut-right {
+  border-radius: 24px 0 0 24px;
+}
+
+/* === Estilos de énfasis (texto) === */
+.enfasis {
+  font-family: 'Shadows Into Light', cursive;
+  display: inline-block;
+  position: relative;
+}
+
+/* Aplicar degradado al texto */
+.is-text-gradient {
+  background: var(--degradado);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Subrayado dinámico */
+.is-subrayado::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 100%;
+  height: 12px;
+  pointer-events: none;
+  
+  background: var(--degradado);
+
+  mask-image: url('../assets/images/underline.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100% 100%;
+
+  -webkit-mask-image: url('../assets/images/underline.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 100% 100%;
+
+  transform: translateX(5%);
+}
+
+/* === Animación de degradado para movimiento sutil === */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === Modo oscuro === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-base: #001b3c;
+    /* Aquí podrías cambiar los degradados si quieres */
+  }
+
+  body {
+    color: #F9FAF6;
+  }
+
+  .bg-box {
+    color: #F9FAF6;
+  }
+}
