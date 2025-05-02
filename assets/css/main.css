@@ -246,6 +246,12 @@ body {
   pointer-events: none;
 }
 
+.center-heading .small-section-title{
+  font-family: 'Shadows Into Light';
+  font-size: 16px;
+  padding-bottom: 32px;
+}
+
 
 .center-text {
   text-align: center;
