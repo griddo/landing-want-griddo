@@ -203,7 +203,6 @@ body {
 
 .left-heading .small-section-title strong {
   font-family: 'Shadows Into Light';
-  text-decoration-line: underline;
   font-size: 18px;
 }
 
@@ -250,6 +249,7 @@ body {
 .center-heading .small-section-title{
   font-family: 'Shadows Into Light';
   font-size: 16px;
+  text-decoration-line: underline;
   padding-bottom: 32px;
 }
 
@@ -1148,6 +1148,25 @@ uni logos
   padding-top: 90px;
   padding-bottom: 90px;
   background-image: radial-gradient(circle at -2% 100%, #C4EBFF 0%, #FAF9F6 30%);
+}
+
+.uni .uni-box {
+  display: block;
+
+  padding: 20px;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: rgba(255,255,255,0.1);
+  border-style: solid;
+ 
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  
 }
 
 
