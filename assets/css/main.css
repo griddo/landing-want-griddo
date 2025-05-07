@@ -203,6 +203,7 @@ body {
 
 .left-heading .small-section-title strong {
   font-family: 'Shadows Into Light';
+  text-decoration-line: underline;
   font-size: 18px;
 }
 
