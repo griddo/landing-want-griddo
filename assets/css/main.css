@@ -774,6 +774,11 @@ welcome
 
 }
 
+.welcome-area .header-text .logo {
+padding-top: 128px;
+
+}
+
 .welcome-area .header-text h1 {
   font-family: 'Logical';
   font-weight: 500;
