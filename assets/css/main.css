@@ -1480,7 +1480,8 @@ contact
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .contact-form textarea {
@@ -1488,6 +1489,43 @@ contact
   resize: none;
   padding: 20px;
 }
+
+.contact-form .form-check-label {
+  margin-top: 10px;
+}
+.contact-form .main-button{
+  margin-top: 10px;
+}
+
+
+/* Restablece el checkbox a su estilo por defecto */
+.contact-form .form-check-input[type="checkbox"] {
+  width: auto !important;
+  height: auto !important;
+  outline: revert !important;
+  padding-left: revert !important;
+  padding-right: revert !important;
+  border-radius: revert !important;
+  -webkit-appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  appearance: checkbox !important;
+  margin-bottom: revert !important;
+  color: revert !important;
+  font-size: revert !important;
+  border: revert !important;
+}
+
+.form-message{
+  display: none;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-radius: 8px;
+  color: #0d47a1;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+}
+.grecaptcha-badge { visibility: hidden; }
 
 /* 
 ---------------------------------------------
