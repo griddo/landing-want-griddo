@@ -593,14 +593,29 @@
     <!-- ***** Contact Us Start ***** -->
     <section class="section colored" id="contact-us">
         <div class="container">
+            <!-- ***** Contact US Title Start ***** -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="center-heading">
+              <div class="section-title">
+                <h2>Explícanos <strong>tu</strong> proyecto</h2>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <!-- ***** Contact US Title End ***** -->
             <div class="row">
                 <!-- ***** Contact Text Start ***** -->
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <h5 class="margin-bottom-30"><span style="color: #FAF9F6">CONTACTA CON NOSOTROS</span></h5>
                     <div class="contact-text">
-                        <p>Lidera la transformación digital en la comunicación y la captación de tu universidad de la mano de Want y Griddo.</p>
                         <p>
-                        Queremos entender tus necesitades y encontrar áreas de colaboración. Contactanos sin compromiso.</p>
+                            Lidera la transformación digital en la comunicación y la captación de tu universidad de la mano de Want y Griddo.
+                        </p>
+                        <p>
+                            Queremos entender tus necesitades y encontrar áreas de colaboración. Contactanos sin compromiso.
+                        </p>
                     </div> 
                 </div>
                 <!-- ***** Contact Text End ***** -->
@@ -608,7 +623,7 @@
                 <!-- ***** Contact Form Start ***** -->
                 <div class="col-lg-8 col-md-6 col-sm-12">
                     <div class="contact-form">
-                        <form id="contact" action="" method="get">
+                        <form id="contact-form" action="https://formspree.io/f/xovdgjra" method="POST">
                           <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12">
                               <fieldset>
@@ -622,25 +637,27 @@
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
                             <fieldset>
-                                <input name="name" type="text" class="form-control" id="university" placeholder="Nombre de la Institución" required="">
+                                <input name="university" type="text" class="form-control" id="university" placeholder="Nombre de la Institución" required="">
                             </fieldset>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
                             <fieldset>
-                                <input name="email" type="email" class="form-control" id="cargo" placeholder="Cargo" required="">
+                                <input name="cargo" type="text" class="form-control" id="cargo" placeholder="Cargo" required="">
                             </fieldset>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <fieldset>
-                                    <input name="email" type="email" class="form-control" id="movil" placeholder="Teléfono Móvil*" required="">
+                                    <input name="phone" type="tel" class="form-control" id="phone" placeholder="Teléfono Móvil*" required="">
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
                                 <button type="submit" id="form-submit" class="main-button">Contactar</button>
                               </fieldset>
+                              
                             </div>
                           </div>
+                          <p id="contact-form-status"></p>
                         </form>
                     </div>
                 </div>
@@ -709,5 +726,6 @@
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/formspree.js"></script>
   </body>
 </html>
