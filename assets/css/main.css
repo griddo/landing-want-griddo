@@ -1562,6 +1562,7 @@ contact
 
 .form-message{
   display: none;
+  margin-top: 2rem;
   padding: 14px 20px;
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   border-radius: 8px;

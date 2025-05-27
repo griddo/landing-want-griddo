@@ -1,6 +1,7 @@
 
 var form = document.getElementById("contact-form");
 
+
 async function handleSubmit(event) {
 event.preventDefault();
 var status = document.getElementById("contact-form-status");
@@ -12,8 +13,10 @@ fetch(event.target.action, {
         'Accept': 'application/json'
     }
 }).then(response => {
+    status.style.display="block";
     if (response.ok) {
-    status.innerHTML = "Thanks for your submission!";
+     
+    status.innerHTML = "Gracias por contactar. ¡En breve le responderemos!";
     form.reset()
     } else {
     response.json().then(data => {
