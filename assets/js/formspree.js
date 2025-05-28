@@ -14,21 +14,23 @@ fetch(event.target.action, {
     }
 }).then(response => {
     status.style.display="block";
+    status.style.background="linear-gradient(135deg, #e3f2fd, #bbdefb)";
     if (response.ok) {
      
     status.innerHTML = "Gracias por contactar. ¡En breve le responderemos!";
     form.reset()
     } else {
     response.json().then(data => {
+        status.style.background="linear-gradient(135deg, #FDD272, #E9B3E9)";
         if (Object.hasOwn(data, 'errors')) {
         status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
         } else {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Vaya! Ha ocurrido un problema al enviar el formulario"
         }
     })
     }
 }).catch(error => {
-    status.innerHTML = "Oops! There was a problem submitting your form"
+    status.innerHTML = "Vaya! Ha ocurrido un problema al enviar el formulario"
 });
 }
 form.addEventListener("submit", handleSubmit)

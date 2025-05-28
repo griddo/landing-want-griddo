@@ -187,42 +187,42 @@
 			}
 		});
 
-		grecaptcha.ready(function() {
-          grecaptcha.execute('6LeQYjcrAAAAAB6wrRx7n4OBaoNv11Jd_PiDOjtq', {action: 'submit'}).then(function(token) {
-			$('#contactForm').on('submit', function(e){
-			e.preventDefault();
-			var form = $(this);
-			var url = form.attr('action');
-			var method = form.attr('method');
-			var data = form.serialize();
+		// grecaptcha.ready(function() {
+        //   grecaptcha.execute('6LeQYjcrAAAAAB6wrRx7n4OBaoNv11Jd_PiDOjtq', {action: 'submit'}).then(function(token) {
+		// 	$('#contactForm').on('submit', function(e){
+		// 	e.preventDefault();
+		// 	var form = $(this);
+		// 	var url = form.attr('action');
+		// 	var method = form.attr('method');
+		// 	var data = form.serialize();
 
-			$.ajax({
-				type: method,
-				url: url,
-				data: data,
-				beforeSend: function() {
-					form.find('button[type="submit"]').prop('disabled', true).text('Enviando...');
-				},
-				success: function(response){
-					$('.form-message').css('display', 'block');
-					$('.form-message').html(response);
-					form[0].reset();
-					var labels = document.querySelectorAll('.label_error');
-					labels.forEach(function(label) {
-						label.remove();
-					});
+		// 	$.ajax({
+		// 		type: method,
+		// 		url: url,
+		// 		data: data,
+		// 		beforeSend: function() {
+		// 			form.find('button[type="submit"]').prop('disabled', true).text('Enviando...');
+		// 		},
+		// 		success: function(response){
+		// 			$('.form-message').css('display', 'block');
+		// 			$('.form-message').html(response);
+		// 			form[0].reset();
+		// 			var labels = document.querySelectorAll('.label_error');
+		// 			labels.forEach(function(label) {
+		// 				label.remove();
+		// 			});
 					
-				},
-				error: function(){
-					$('.form-message').html('<div class="alert alert-danger">There was an error processing your request. Please try again.</div>');
-				},
-				complete: function() {
-					form.find('button[type="submit"]').prop('disabled', false).text('Quiero Asistir');
-				}
-			});
-		});
-          });
-        });
+		// 		},
+		// 		error: function(){
+		// 			$('.form-message').html('<div class="alert alert-danger">There was an error processing your request. Please try again.</div>');
+		// 		},
+		// 		complete: function() {
+		// 			form.find('button[type="submit"]').prop('disabled', false).text('Quiero Asistir');
+		// 		}
+		// 	});
+		// });
+        //   });
+        // });
 		
 	});
 
